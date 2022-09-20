@@ -8,6 +8,7 @@
     <form method="POST" autocomplete="on" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" enctype="multipart/form-data">
       <fieldset>
 	  <legend>Volunteer Form</legend>
+	    <label>My Info</label>
 	    <div>
 		  <label>First Name: <input type="text" name="first_name_field" placeholder="first name"></label>
 		</div>
@@ -51,9 +52,14 @@
 		  <label><input type="checkbox" name="available_field[]" value="sat"> Saturday</label>
 		</div>
 		<div>
-		<label for="our_textarea">Comments:</label>
-		  <textarea cols="30" rows="10" name="comments_field" placeholder="Any comments? Enter here"></textarea>
+		  <input type="hidden" name="hidden_field" value="tcoleman3">
 		</div>
+		<div>
+		<label for="our_comments">Comments:</label>
+		  <textarea cols="30" rows="10" name="comments_field" placeholder="Any comments? Enter here" id="our_comments"></textarea>
+		</div>
+		<input type="submit" value="Sign up to volunteer!">
 	  </fieldset>
+	</form>
   </body>
 </html>
